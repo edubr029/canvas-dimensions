@@ -1,3 +1,5 @@
+<a href="https://modrinth.com/datapack/canvas-dimensions"><img src="https://raw.githubusercontent.com/edubr029/canvas-dimensions/refs/heads/main/pack.png" width="128" align="left"></a>
+
 # Canvas Dimensions
 
 A data pack that adds three flat utility dimensions for building, redstone testing, and creative projects.
