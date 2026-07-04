@@ -6,11 +6,35 @@ A data pack that adds three flat utility dimensions for building, redstone testi
 
 ## Dimensions
 
-| Dimension | Description | Teleport Command |
-|-----------|-------------|------------------|
-| Void | Empty void with a stone start platform | `/execute in canvas:void run tp @s ~ ~ ~` |
-| Redstone | Bedrock + stone + sandstone flatworld, desert biome | `/execute in canvas:redstone run tp @s ~ ~ ~` |
-| Plains | Bedrock + stone + dirt + grass flatworld with villages, lakes, and structures | `/execute in canvas:plains run tp @s ~ ~ ~` |
+| Dimension | Description | Quick Command |
+|-----------|-------------|---------------|
+| Void | Empty void with a stone start platform | `/function canvas:tp_void` |
+| Redstone | Bedrock + stone + sandstone flatworld, desert biome | `/function canvas:tp_redstone` |
+| Plains | Bedrock + stone + dirt + grass flatworld with villages, lakes, and structures | `/function canvas:tp_plains` |
+
+## Usage
+
+### Dialog Menu
+
+Open the dimension picker dialog:
+
+```
+/function canvas:menu
+```
+
+The dialog is also available from the **pause menu** (press Esc) and the **Quick Actions** hotkey — no command needed.
+
+### Quick Teleport
+
+For players who prefer commands over the dialog:
+
+| Command | Action |
+|---------|--------|
+| `/function canvas:tp_void` | Teleport to Void |
+| `/function canvas:tp_redstone` | Teleport to Redstone |
+| `/function canvas:tp_plains` | Teleport to Plains |
+| `/function canvas:tp_overworld` | Return to Overworld |
+| `/function canvas:menu` | Open dimension picker dialog |
 
 ## Installation
 
@@ -18,7 +42,7 @@ A data pack that adds three flat utility dimensions for building, redstone testi
 2. Place it in your world's `datapacks/` folder
    - **Singleplayer**: `.minecraft/saves/<world>/datapacks/`
    - **Multiplayer**: `<server>/world/datapacks/`
-3. Open the world (or run `/reload` if already in-game)
+3. Open the world (world generation changes require reopening the world — `/reload` is not sufficient for dimensions)
 
 ## Compatibility
 

@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "Canvas Dimensions",
+  "external_title": "Canvas Dimensions",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Choose a dimension to travel to:",
+      "width": 200
+    }
+  ],
+  "actions": [
+    {
+      "label": "Void",
+      "tooltip": "Empty void with a stone start platform",
+      "action": {
+        "type": "run_command",
+        "command": "function canvas:tp_void"
+      }
+    },
+    {
+      "label": "Redstone",
+      "tooltip": "Bedrock + stone + sandstone flatworld, desert biome",
+      "action": {
+        "type": "run_command",
+        "command": "function canvas:tp_redstone"
+      }
+    },
+    {
+      "label": "Plains",
+      "tooltip": "Flat plains with villages, lakes, and structures",
+      "action": {
+        "type": "run_command",
+        "command": "function canvas:tp_plains"
+      }
+    },
+    {
+      "label": "Overworld",
+      "tooltip": "Return to the overworld at 0 72 0",
+      "action": {
+        "type": "run_command",
+        "command": "function canvas:tp_overworld"
+      }
+    }
+  ],
+  "columns": 1,
+  "exit_action": {
+    "label": "Close"
+  },
+  "can_close_with_escape": true,
+  "pause": false
+}
