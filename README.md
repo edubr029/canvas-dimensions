@@ -26,19 +26,29 @@ The dialog is also available from the **pause menu** (press Esc) and the **Quick
 
 ### Quick Teleport
 
-For players who prefer commands over the dialog:
-
 | Command | Action |
 |---------|--------|
+| `/function canvas:menu` | Open dimension picker dialog |
 | `/function canvas:tp_void` | Teleport to Void |
 | `/function canvas:tp_redstone` | Teleport to Redstone |
 | `/function canvas:tp_plains` | Teleport to Plains |
 | `/function canvas:tp_overworld` | Return to Overworld |
-| `/function canvas:menu` | Open dimension picker dialog |
+
+<details>
+<summary>Direct <code>/execute</code> commands</summary>
+
+| Command | Action |
+|---------|--------|
+| `/execute in canvas:void run tp @s ~ ~ ~` | Teleport to Void |
+| `/execute in canvas:redstone run tp @s ~ ~ ~` | Teleport to Redstone |
+| `/execute in canvas:plains run tp @s ~ ~ ~` | Teleport to Plains |
+| `/execute in minecraft:overworld run tp @s ~ ~ ~` | Return to Overworld |
+
+</details>
 
 ## Installation
 
-1. Download the `.zip` file
+1. Download the `.zip` file from [Modrinth](https://modrinth.com/datapack/canvas-dimensions/versions)
 2. Place it in your world's `datapacks/` folder
    - **Singleplayer**: `.minecraft/saves/<world>/datapacks/`
    - **Multiplayer**: `<server>/world/datapacks/`
